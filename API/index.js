@@ -46,6 +46,9 @@ const formDataSchema = new mongoose.Schema({
 
 const FormData = mongoose.model("students", formDataSchema);
 
+app.get("/", (req, res) => {
+  res.send("hello server side");
+});
 // Route to handle form submission
 app.post("/submit", async (req, res) => {
   try {
