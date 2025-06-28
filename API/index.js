@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(
   cors({
-    origin: "https://enig.vercel.app", // replace with your frontend URL
+    origin: "*", // replace with your frontend URL
     methods: ["GET", "POST", "PUT", "DELETE"], // specify methods to allow
     credentials: true, // allow credentials if needed
   })
